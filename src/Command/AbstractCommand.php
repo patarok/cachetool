@@ -35,6 +35,7 @@ abstract class AbstractCommand extends Command implements ContainerAwareInterfac
      */
     protected function ensureExtensionLoaded($extension)
     {
+        ///wtf
         if (!$this->getCacheTool()->extension_loaded($extension)) {
             throw new \Exception("Extension `{$extension}` is not loaded");
         }
